@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#ffffff"
+    >
+	
+    <ImageView 
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/su_ic_local_errpr"
+        />
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="网络有问题，请检查后重试"
+        android:gravity="center_horizontal"
+        android:textColor="#929292"
+        android:textSize="16sp"
+         />
+
+    <TextView
+        android:id="@+id/btn_retry"
+        android:layout_marginTop="60dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="重试"
+        android:gravity="center"
+        android:textColor="#929292"
+        android:textSize="18sp"
+        android:background="#ededed"
+         />
+
+</LinearLayout>

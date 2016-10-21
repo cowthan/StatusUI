@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#34495E"
+    android:orientation="vertical"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/btn_refresh"
+                style="@style/my_btn"
+                android:text="刷新"
+                />
+
+            <Button
+                android:id="@+id/btn_empty"
+                style="@style/my_btn"
+                android:text="无数据"
+                />
+
+            <Button
+                android:id="@+id/btn_netoff"
+                style="@style/my_btn"
+                android:text="断网"
+                />
+
+            <Button
+                android:id="@+id/btn_server_error"
+                style="@style/my_btn"
+                android:text="服务器错"
+                />
+
+            <Button
+                android:id="@+id/btn_logic_fail"
+                style="@style/my_btn"
+                android:text="逻辑不通"
+                />
+
+            <Button
+                android:id="@+id/btn_local_error"
+                style="@style/my_btn"
+                android:text="解析错误"
+                />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#000000"
+        />
+    <FrameLayout
+        android:id="@+id/frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <TextView
+            android:id="@+id/view_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="真实数据：content view"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            />
+
+    </FrameLayout>
+
+</LinearLayout>
