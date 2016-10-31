@@ -55,7 +55,7 @@ public abstract class StatusProvider  {
     }
 
     public void hideStatusView(){
-        if(statusView == null){
+        if(statusView != null){
             statusView.setVisibility(View.GONE);
         }
     }
